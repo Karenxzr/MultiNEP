@@ -7,16 +7,16 @@ MultiNEP is an improved analytical tool to prioritize disease-associated genes a
 ## Installation
 
 - The R package of MultiNEP can be installed through:<br />
-if (!requireNamespace("devtools", quietly = TRUE)) <br />
-install.packages("devtools")<br />
-library("devtools")<br />
-install_github("Karenxzr/MultiNEP")
+`if (!requireNamespace("devtools", quietly = TRUE))` <br />
+`install.packages("devtools")`<br />
+`library("devtools")`<br />
+`install_github("Karenxzr/MultiNEP")`
 
 ## Usage
 
 It is quite simple to run MultiNEP through a wrapper function of `nep`, see example below:
 
-library(MultiNEP) <br />
-results = nep(s0=s0,E=E,signals=signal,feature_name_list = feature_name_list, model='multinep') <br />
+`library(MultiNEP)` <br />
+`results = nep(s0=s0,E=E,signals=signal,feature_name_list = feature_name_list, model='multinep')` <br />
 
 You can also change parameters such as $\lambda_g$ or $\lambda_m$. Run `?nep` to find more details.
