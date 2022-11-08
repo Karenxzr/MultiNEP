@@ -14,5 +14,9 @@ install_github("Karenxzr/MultiNEP")
 
 ## Usage
 
+It is quite simple to run MultiNEP through a wrapper function of `nep`, see example below:
+
 library(MultiNEP) <br />
 results = nep(s0=s0,E=E,signals=signal,feature_name_list = feature_name_list, model='multinep') <br />
+
+You can also change parameters such as $\lambda_g$ or $\lambda_m$. Run `?nep` to find more details.
