@@ -15,4 +15,4 @@ install_github("Karenxzr/MultiNEP")
 ## Usage
 
 library(MultiNEP) <br />
-results = nep(s0=s0,E=E,signals=signal,feature_name_list = feature_name_list,return_mat = F) <br />
+results = nep(s0=s0,E=E,signals=signal,feature_name_list = feature_name_list, model='multinep') <br />
