@@ -2,7 +2,7 @@
 % Please edit documentation in R/nep.R
 \name{nep}
 \alias{nep}
-\title{Run network enhancement and prioritize disease signals}
+\title{Wrapper function to perform network enhancement and prioritize using MultiNEP or DiSNEP}
 \usage{
 nep(
   s0,
@@ -60,7 +60,7 @@ nep(
 result list with the first element being prioritized signals, the second is a list of enhanced networks if set return_mat as TRUE
 }
 \description{
-Run network enhancement and prioritize disease signals
+Wrapper function to perform network enhancement and prioritize using MultiNEP or DiSNEP
 }
 \examples{
 nep(s0,E,signals,signal_type = 'pvalue',feature_name_list=list(gene_names,metabolite_names),

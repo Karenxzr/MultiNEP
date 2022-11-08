@@ -43,7 +43,7 @@ nep = function(s0,E,signals,signal_type = 'pvalue',alpha=0.75,beta=0.75,
                iter=30,difference=1e-6,return_mat=T,lambda_g=0.05,lambda_m=20,
                model = 'multinep',parallel=F,nworker=4){
   
-  #' Run network enhancement and prioritize disease signals
+  #' Wrapper function to perform network enhancement and prioritize using MultiNEP or DiSNEP
   #'
   #' @param s0 matrix of the general network
   #' @param E disease similarity matrix
