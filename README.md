@@ -19,4 +19,6 @@ It is quite simple to run MultiNEP through a wrapper function of `nep`, see exam
 `library(MultiNEP)` <br />
 `results = nep(s0=s0,E=E,signals=signal,feature_name_list = feature_name_list, model='multinep')` <br />
 
-You can also change parameters such as $\lambda_g$ or $\lambda_m$. Run `?nep` to find more details.
+You can also change parameters such as $\lambda_g$ or $\lambda_m$. Run `results$vec` to get prioritized candidate disease-associated multi-omics features. If you want to get re-weighted and enhanced disease-specific multi-omics network $S_E$, run `results$enhanced_mat$unprocessed` or `results$enhanced_mat$processed` with `return_mat` argument set as TRUE.  <br />
+
+Run `?nep` to find more details.
