@@ -2,7 +2,7 @@
 
 <img width="898" alt="image" src="https://user-images.githubusercontent.com/27308407/206234973-b4c3a6b0-0bce-48a7-ac79-8bb2f74fbcbb.png">
 
-MultiNEP is an improved analytical tool to prioritize disease-associated genes and metabolites simultanuously using multi-omics network with the ability to handle network imbalance. Multinep first reweight a general multi-omics network $S^0$ from database and a multi-omics similarity matrix $E$ based on disease profiles into $\tilde{S^0}$ and $\tilde{E}$ using weighting parameters $\lambda_g$ and $\lambda_m$. Then using reweighted $\tilde{E}$ to enhance reweighted $\gilde{S^0}$ into a disease-specific network $S_E$. At last, update initial disease-association gene and metabolite scores by diffusing on the enhanced and denoised multi-omics network $S_E$, and prioritize candidate disease-associated genes and metabolites simultanuously using updated disease-association gene and metabolite scores. 
+MultiNEP is an improved analytical tool to prioritize disease-associated genes and metabolites simultanuously using multi-omics network with the ability to handle network imbalance. Multinep first reweight a general multi-omics network $S^0$ from database and a multi-omics similarity matrix $E$ based on disease profiles into $\tilde{S^0}$ and $\tilde{E}$ using weighting parameters $\lambda_g$ and $\lambda_m$. Then using reweighted $\tilde{E}$ to enhance reweighted $\tilde{S^0}$ into a disease-specific network $S_E$. At last, update initial disease-association gene and metabolite scores by diffusing on the enhanced and denoised multi-omics network $S_E$, and prioritize candidate disease-associated genes and metabolites simultanuously using updated disease-association gene and metabolite scores. 
 
 ## Installation
 
