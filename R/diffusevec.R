@@ -1,5 +1,5 @@
 diffuse_vec=function(signals,snet,type='pvalue',beta=0.75,iter=30,difference=1e-6){
-
+  require(SMUT)
   #pre-precoss association signals
   if (type=="pvalue"){
     signals[,2]=qnorm(signals[,2]/2,lower.tail = F)

@@ -2,7 +2,7 @@ diffuse_matrix=function(s0,E,alpha=0.75,iter=30,difference=1e-6,
                         heter_diffuse = F,
                         heter_param = list(feature_name_list=NULL,lambda_g=0.05,lambda_m=20),
                         parallel=F, nworker=4){
- 
+ require(SMUT)
   #preprocess
   mat_list = mat_intersect(s0,E)
   s0 = mat_list[[1]];E = mat_list[[2]]
@@ -39,6 +39,8 @@ diffuse_matrix=function(s0,E,alpha=0.75,iter=30,difference=1e-6,
 
 #matrix multiplication in parallel
 matprod.par <- function(A, B,nworker=4,rcpp=T){
+  require(parallel)
+  require(SMUT)
   cl=makePSOCKcluster(nworker)
   if (ncol(A) != nrow(B)) stop("Matrices do not conforme")
   idx   <- splitIndices(nrow(A), nworker)
