@@ -14,11 +14,18 @@ MultiNEP is an improved analytical tool to prioritize disease-associated genes a
 
 ## Usage
 
-It is quite simple to run MultiNEP through a wrapper function of `nep`. You need to provide a matrix of general network `s0`, a disease-specific feature similarity matrix `E`, a dataframe of initial disease assiciation signals `signal`, and a list of feature names `feature_name_list` with the first element containing all gene names and the second containing all metabolite names. You can find sample input data within pacakge or in the `data` folder. See example below:
+It is quite simple to run MultiNEP through a wrapper function of `nep`. 
+Input required:
+- General network `s0`: an $n \times n$ matrix. With rownames and colnames being set as gene/metabolite names.
+- Disease similarity matrix `E`: an $n \times n$ matrix. With rownames and colnames being set as gene/metabolite names. Note, all values in E should range from 0 - 1.
+- Initial disease association scores `signal`: a dataframe with the first column being feature names, the second column being initial association scores.
+- Feature name list `feature_name_list`: a list with the first element containing all gene names and the second containing all metabolite names. 
+
+You can find sample input data within pacakge or in the `data` folder. See an application example as below:
 
 `library(MultiNEP)` <br />
 `results = nep(s0=s0,E=E,signals=signal,feature_name_list = feature_name_list, model='multinep')` <br />
 
-You can also change parameters such as $\lambda_g$ or $\lambda_m$. Run `results$vec` to get prioritized candidate disease-associated multi-omics features. If you want to get re-weighted and enhanced disease-specific multi-omics network $S_E$, run `results$enhanced_mat$unprocessed` or `results$enhanced_mat$processed` with `return_mat` argument set as TRUE.  <br />
+Run `results$vec` to get prioritized candidate disease-associated multi-omics features. If you want to get re-weighted and enhanced disease-specific multi-omics network $S_E$, run `results$enhanced_mat$unprocessed` or `results$enhanced_mat$processed` with `return_mat` argument set as TRUE.  <br />
 
-Run `?nep` to find more details.
+You can also change parameters such as $\lambda_g$ or $\lambda_m$. Run `?nep` to find more details.
