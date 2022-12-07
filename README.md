@@ -14,7 +14,7 @@ MultiNEP is an improved analytical tool to prioritize disease-associated genes a
 
 ## Usage
 
-It is quite simple to run MultiNEP through a wrapper function of `nep`. You need to provide a matrix of general network, a disease-specific feature similarity matrix, a dataframe of initial disease assiciation signals, and a list of feature names with the first element with all gene names and the second being all metabolites. You can find sample input data within pacakge or in the `data` folder. See example below:
+It is quite simple to run MultiNEP through a wrapper function of `nep`. You need to provide a matrix of general network `s0`, a disease-specific feature similarity matrix `E`, a dataframe of initial disease assiciation signals `signal`, and a list of feature names `feature_name_list` with the first element with all gene names and the second being all metabolites. You can find sample input data within pacakge or in the `data` folder. See example below:
 
 `library(MultiNEP)` <br />
 `results = nep(s0=s0,E=E,signals=signal,feature_name_list = feature_name_list, model='multinep')` <br />
