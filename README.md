@@ -29,3 +29,8 @@ You can find sample input data within pacakge or in the `data` folder. See an ap
 Run `results$vec` to get prioritized candidate disease-associated multi-omics features. If you want to get re-weighted and enhanced disease-specific multi-omics network $S_E$, run `results$enhanced_mat$unprocessed` or `results$enhanced_mat$processed` with `return_mat` argument set as TRUE.  <br />
 
 You can also change parameters such as $\lambda_g$ or $\lambda_m$. Run `?nep` to find more details.
+
+## Reference
+- Xu Z, Lee B, Marchionni L, Wang S. MultiNEP: disease-specific Multi-omics Network Enhancement for Prioritizing disease genes and metabolites. 
+- Ruan P, Wang S. DiSNEP: a Disease-Specific gene Network Enhancement to improve Prioritizing candidate disease genes. Brief Bioinform. 2021 Jul 20;22(4):bbaa241. doi: 10.1093/bib/bbaa241. PMID: 33064143.
+
