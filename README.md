@@ -1,4 +1,4 @@
-# MultiNEP: disease-specific Multi-omics Network Enhancement for Prioritizing disease genes and metabolites
+# MultiNEP: a Multi-omics Network Enhancement framework for Prioritizing disease genes and metabolites
 
 <img width="898" alt="image" src="https://user-images.githubusercontent.com/27308407/206234973-b4c3a6b0-0bce-48a7-ac79-8bb2f74fbcbb.png">
 
@@ -31,6 +31,6 @@ Run `results$vec` to get prioritized candidate disease-associated multi-omics fe
 You can also change parameters such as $\lambda_g$ or $\lambda_m$. Run `?nep` to find more details.
 
 ## Reference
-- Xu Z, Lee B, Marchionni L, Wang S. MultiNEP: disease-specific Multi-omics Network Enhancement for Prioritizing disease genes and metabolites. 
+- Xu Z, Lee B, Marchionni L, Wang S. MultiNEP: a Multi-omics Network Enhancement framework for Prioritizing disease genes and metabolites. 
 - Ruan P, Wang S. DiSNEP: a Disease-Specific gene Network Enhancement to improve Prioritizing candidate disease genes. Brief Bioinform. 2021 Jul 20;22(4):bbaa241. doi: 10.1093/bib/bbaa241. PMID: 33064143.
 
