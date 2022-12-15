@@ -18,7 +18,7 @@ It is quite simple to run MultiNEP through a wrapper function of `nep`.
 Input required:
 - General network `s0`: an $n \times n$ matrix. With rownames and colnames being set as gene/metabolite names.
 - Disease similarity matrix `E`: an $n \times n$ matrix. With rownames and colnames being set as gene/metabolite names. Note, all values in E should range from 0 - 1.
-- Initial disease association scores `signal`: a dataframe with the first column being feature names, the second column being initial association scores.
+- Initial disease association scores `signal`: a dataframe with the first column being feature names, the second column being initial association scores. Input p-values as default association scores.
 - Feature name list `feature_name_list`: a list with the first element containing all gene names and the second containing all metabolite names. 
 
 You can find sample input data within pacakge or in the `data` folder. See an application example as below:
