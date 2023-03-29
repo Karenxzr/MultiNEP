@@ -49,6 +49,7 @@ matprod.par <- function(A, B,nworker=4,rcpp=T){
     ans   <- clusterApply(cl, Alist, get('eigenMapMatMult'), B)
   }else{ans   <- clusterApply(cl, Alist, get('%*%'), B)}
   return(do.call(rbind, ans))
+  closeAllConnections()    
   stopCluster(cl)
 }
 
