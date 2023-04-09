@@ -1,4 +1,4 @@
-# MultiNEP: a Multi-omics Network Enhancement framework for Prioritizing disease genes and metabolites
+# MultiNEP: a Multi-omics Network Enhancement framework for Prioritizing disease genes and metabolites simultanuously
 
 <img width="898" alt="image" src="https://user-images.githubusercontent.com/27308407/206234973-b4c3a6b0-0bce-48a7-ac79-8bb2f74fbcbb.png">
 
